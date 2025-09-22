@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Taxi Fare Calculator</title>
+</head>
+<body>
+    <h1>Taxi Fare Calculator</h1>
+    <form id="fareCalculator">
+        <label for="distance">Distance (miles):</label>
+        <input type="number" id="distance" name="distance" required>
+
+        <label for="rate">Rate per mile:</label>
+        <input type="number" id="rate" name="rate" required>
+
+        <button type="submit">Calculate Fare</button>
+    </form>
+
+    <h2>Total Fare: <span id="totalFare">$0.00</span></h2>
+
+    <script>
+        document.getElementById('fareCalculator').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const distance = parseFloat(document.getElementById('distance').value);
+            const rate = parseFloat(document.getElementById('rate').value);
+            const totalFare = distance * rate;
+            document.getElementById('totalFare').textContent = `$${totalFare.toFixed(2)}`;
+        });
+    </script>
+</body>
+</html>
