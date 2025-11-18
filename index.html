@@ -36,9 +36,9 @@
       <span class="navbar-brand mb-0 h1 grunge-font">Heat Cracker Hot Sauce</span>
     </div>
   </nav>  <!-- PRODUCT SECTION -->  <section class="container text-center mt-5">
-    <img src="https://via.placeholder.com/250x500?text=Chilli+Sauce+Bottle" class="product-img mb-3" alt="Hot Sauce Bottle" />
-    <h3>Heat Cracker Original Sauce</h3>
-    <p class="lead">Price: R59.99</p>
+    <img src="hotsauce1.png" class="product-img mb-3" alt="Hot Sauce Bottle" />
+    <h3>Heat Cracker Hot Sauce</h3>
+    <p class="lead">Price: R50.00</p>
     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#orderModal">Buy on WhatsApp</button>
   </section>  <!-- POP-UP MODAL FORM -->  <div class="modal fade" id="orderModal" tabindex="-1">
     <div class="modal-dialog">
@@ -63,11 +63,11 @@
     </div>
   </div>  <!-- FOOTER -->  <footer>
     <p>Heat Cracker Hot Sauce - Website edited by Kgolagano</p>
-    <img src="https://via.placeholder.com/60?text=Logo" class="logo-small" />
+    <img src="kgolaganologo.png" class="logo-small" />
   </footer>  <script>
     function sendOrder() {
       const qty = document.getElementById('quantity').value;
-      const imageLink = 'https://via.placeholder.com/250x500?text=Chilli+Sauce+Bottle';
+      const imageLink = 'https://kgolaganopoosa.github.io/raydarblog/heatcracker.png';
       const message = `Hello, I want to order Heat Cracker Hot Sauce.%0AQuantity: ${qty}%0AImage: ${imageLink}`;
       const whatsappURL = `https://wa.me/?text=${message}`;
       window.open(whatsappURL, '_blank');
