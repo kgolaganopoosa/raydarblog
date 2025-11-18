@@ -67,11 +67,10 @@
     <p>Heat Cracker Hot Sauce - Website edited by Kgolagano</p>
     <img src="kgolaganologo.png" class="logo-small" />
   </footer> 
-    <script>
+     <script>
     function sendOrder() {
-      
-      
-      const message = `Hello, I want to order Heat Cracker Hot Sauce.`;
+      const qty = document.getElementById('quantity').value;
+      const message = `Hello, I want to order Heat Cracker Hot Sauce.%0AQuantity: ${imageLink}`;
       const whatsappURL = `https://wa.me/27791257725?text=${message}`;
       window.open(whatsappURL, '_blank');
     }
